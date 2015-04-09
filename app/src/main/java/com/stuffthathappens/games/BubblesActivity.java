@@ -41,15 +41,10 @@ public class BubblesActivity extends Activity implements Callback, OnTouchListen
         backgroundPaint = new Paint();
         backgroundPaint.setColor(Color.BLUE);
 
-        // TODO: bubble the color to the model
-        // Get a device ID to create a color
-        String androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-        int androidIdInt = new BigInteger(androidId, 16).intValue();
-        int hue = androidIdInt % 360;
-
         bubblePaint = new Paint();
-        bubblePaint.setColor(Color.HSVToColor(new float[] {(float)hue, 1f, 1f}));
+        bubblePaint.setColor(Color.WHITE);
         bubblePaint.setAntiAlias(true);
+
 
         surface.setOnTouchListener(this);
     }

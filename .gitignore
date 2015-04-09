@@ -1,4 +1,5 @@
 .idea
+.gradle
 local.properties
 build/
 *iml

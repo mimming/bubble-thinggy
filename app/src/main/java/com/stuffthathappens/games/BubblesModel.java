@@ -1,8 +1,11 @@
 package com.stuffthathappens.games;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.provider.Settings;
 import android.util.Log;
 
 import com.firebase.client.ChildEventListener;
@@ -12,6 +15,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ServerValue;
 import com.firebase.client.ValueEventListener;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -89,6 +93,7 @@ public class BubblesModel implements OnCompletionListener {
             this.y = y;
             this.born = System.currentTimeMillis() + clockSkew;
         }
+
     }
 
     private final Map<String, Bubble> bubbles = new ConcurrentHashMap<>();
