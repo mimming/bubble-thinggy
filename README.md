@@ -2,6 +2,8 @@
 
 I took a simple Android game demo from elsewhere on GitHub and MMOized it for the heck of it
 
+![bubble thinggy preview gif](img/bubbles-preview.gif)
+
 ## Credit
 Forked from [eburke's game example repo](https://github.com/eburke/android_game_examples/)
 
